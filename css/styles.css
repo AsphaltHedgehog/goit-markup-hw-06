@@ -60,7 +60,7 @@ img {
 }
 /* phone screen */
 .container {
-  min-width: 396px;
+  min-width: 320px;
   max-width: 428px;
   margin: 0 auto;
   padding: 0 16px;
@@ -285,6 +285,13 @@ img {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .section-principles .container {
+    width: 768px;
+    margin: 0 0;
+  }
+}
+
 .principle-list {
   display: flex;
   flex-direction: row;
@@ -296,13 +303,10 @@ img {
   .principle-list {
     gap: 72px;
     column-gap: 24px;
-    justify-content: space-between;
   }
-}
-
-@media only screen and (min-width: 768px) {
   .principle-flex-list {
-    width: 356px;
+    /* width: 356px; */
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -539,6 +543,7 @@ img {
   flex-wrap: wrap;
   gap: 72px;
   column-gap: 16px;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -720,23 +725,55 @@ w .border-cards {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer .footer-container {
   max-width: 264px;
 }
 
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+}
+
 .footer .container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: baseline;
+  gap: 72px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer .container {
+    gap: 72px;
+    column-gap: 24px;
+    width: 555px;
+    justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer .container {
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 0;
+  }
 }
 
 .footer-flex {
-  max-width: 264px;
-  margin-right: 120px;
+  max-width: 268px;
+  display: block;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-flex {
+    max-width: 264px;
+    margin-right: 120px;
+  }
 }
 
 .footer-logo {
@@ -747,8 +784,16 @@ w .border-cards {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin-bottom: 17.5px;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .footer-logo-span {
@@ -763,7 +808,7 @@ w .border-cards {
   letter-spacing: 0.02em;
 }
 
-.footer .paragraph:nth-child(1) {
+.footer .paragraph {
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -772,8 +817,24 @@ w .border-cards {
   margin-bottom: 16px;
 }
 
-.footer-flex-links {
-  margin-right: 80px;
+.footer .footer-flex .paragraph {
+  margin-bottom: 0;
+}
+
+.footer .form-subscribe .form-subscribe-label {
+  margin-bottom: 0px;
+}
+
+@media only screen and not (min-width: 768px) {
+  .footer-flex-links {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-flex-links {
+    margin-right: 80px;
+  }
 }
 
 .flex-links .link {
@@ -810,13 +871,14 @@ w .border-cards {
 /* subscribe form */
 
 .box-subscribe-form {
-  /* display: inline-flex;
-  align-items: baseline; */
-  gap: 24px;
-
   width: 453px;
-  height: 80px;
 }
+
+/* @media only screen and (min-width: 768px) {
+  .box-subscribe-form {
+    height: 80px;
+  }
+} */
 
 .form-subscribe {
   display: flex;
@@ -827,12 +889,23 @@ w .border-cards {
   margin-bottom: 16px;
 }
 
+@media only screen and not (min-width: 768px) {
+  .form-subscribe-paragraph {
+    text-align: center;
+  }
+
+  .form-subscribe {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .form-subscribe-input {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  width: 264px;
+  width: 398px;
   height: 40px;
 
   box-sizing: border-box;
@@ -846,6 +919,18 @@ w .border-cards {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   outline: none;
+}
+
+@media only screen and (max-width: 424px) {
+  .form-subscribe-input {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-subscribe-input {
+    max-width: 264px;
+  }
 }
 
 .form-subscribe-input:focus-within {
