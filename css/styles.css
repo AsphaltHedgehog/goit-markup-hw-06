@@ -218,35 +218,56 @@ img {
 
 /* address list */
 
-.header-address-list .link:hover,
-.header-address-list .link:focus {
-  color: #404bbf;
+.header-address-list {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.header-address-list .link {
-  transition: var(--transition-color-timing);
+.header-address-list {
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-address-list {
+    gap: 40px;
+  }
 }
 
 .header .address {
   font-style: normal;
 }
 
-.header-address-list {
-  display: flex;
-  gap: 40px;
+.header-address-list .link {
+  transition: var(--transition-color-timing);
+}
+
+.header-address-list .link:hover,
+.header-address-list .link:focus {
+  color: #404bbf;
 }
 
 .header-address-list .text {
   color: #434455;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 24px 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-address-list .text {
+    padding: 24px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header-address-list .text {
-  display: inline-block;
+  display: block;
 }
 
 .header-nav .active {
