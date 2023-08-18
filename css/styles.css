@@ -247,8 +247,7 @@ img {
 .section-hero {
   background-color: #2e2f42;
   text-align: center;
-  padding: 188px 0;
-  margin: 0 auto;
+  padding: 112px 0;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -259,36 +258,54 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin-bottom: 96px;
 }
 
 .section-hero .section-title {
   color: #ffffff;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.04em;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 48px;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-hero {
+    margin-bottom: 120px;
+    padding: 188px 0;
+  }
+  .section-hero .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+  }
 }
 
 /* second section */
 
 .section-principles {
-  padding: 96px 0;
+  margin-bottom: 96px;
 }
 
 @media only screen and (min-width: 1158px) {
   .section-principles {
-    padding: 120px 0;
+    margin-bottom: 120px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .section-principles .container {
     width: 768px;
-    margin: 0 0;
   }
 }
 
@@ -305,7 +322,6 @@ img {
     column-gap: 24px;
   }
   .principle-flex-list {
-    /* width: 356px; */
     width: calc((100% - 24px) / 2);
   }
 }
@@ -314,7 +330,7 @@ img {
   .principle-flex-list {
     /* flex-basis: calc((100% - 3 * 24px) / 4); */
     width: 264px;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
 }
 
@@ -919,6 +935,12 @@ w .border-cards {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   outline: none;
+}
+
+@media only screen and (max-width: 1157px) {
+  .form-subscribe-input {
+    opacity: 0.3;
+  }
 }
 
 @media only screen and (max-width: 424px) {
