@@ -1457,6 +1457,16 @@ w .border-cards {
   gap: 56px;
 }
 
+@media only screen and (max-width: 424.98px) {
+  .mobile-menu-address .tel-link {
+    font-size: 28px;
+  }
+
+  .mobile-menu-flex .flex-list {
+    gap: 32px;
+  }
+}
+
 .mobile-list-links {
   height: 40px;
   width: 40px;
