@@ -1124,6 +1124,12 @@ w .border-cards {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 424.98px) {
+  .modal-window {
+    width: 95%;
+  }
+}
+
 /* modal close-button */
 
 .button-modal-close {
@@ -1258,8 +1264,9 @@ w .border-cards {
 .input-comment::placeholder {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   font-family: inherit;
+  color: #2e2f4266;
 }
 
 .modal-textarea {
