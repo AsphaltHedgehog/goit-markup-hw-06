@@ -327,6 +327,8 @@ img {
   background-color: #2e2f42;
   text-align: center;
   padding: 112px 0;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -336,7 +338,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 428px;
   margin-bottom: 96px;
 }
 
@@ -345,25 +347,35 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 768px;
+  }
+  .section-hero .section-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+    max-width: 496px;
+
+    margin-bottom: 36px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
   .section-hero {
-    margin-bottom: 120px;
+    max-width: 1440px;
     padding: 188px 0;
+    margin-bottom: 120px;
   }
   .section-hero .section-title {
     color: #ffffff;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
@@ -460,7 +472,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -468,9 +480,9 @@ img {
     text-align: left;
   }
 
-  .principle-list .paragraph {
+  /* .principle-list .paragraph {
     text-align: left;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -488,7 +500,7 @@ img {
 /* third section */
 
 /* section are hide for phone and tablet */
-@media only screen and not (min-width: 1157px) {
+@media only screen and not (min-width: 1157.98px) {
   .section-design-example {
     position: absolute;
     width: 1px;
@@ -563,6 +575,10 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-thumb {
+  width: 264px;
 }
 
 .worker-cards {
